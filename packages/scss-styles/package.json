@@ -1,0 +1,19 @@
+{
+  "name": "@junin-ui/scss-styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cpx ./src/**/* ./dist/ --watch && sass src/main.scss ./dist/main.css",
+    "build": "cpx ./src/**/* ./dist/ && sass src/main.scss ./dist/main.css"
+  },
+  "keywords": [],
+  "author": "Saulo Santana",
+  "license": "ISC",
+  "dependencies": {
+    "cpx2": "^7.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}
