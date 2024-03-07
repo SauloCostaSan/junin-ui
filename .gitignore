@@ -1,1 +1,12 @@
-/node_modules
+#dependencies
+node_modules
+
+#testing
+coverage
+
+#dist
+dist
+
+#turbo
+.turbo
+
