@@ -1,27 +1,46 @@
+// {
+//   "compilerOptions": {
+//     "target": "es6",
+//     "module": "commonjs",
+//     "strict": true
+//   },
+//   "include": ["src", "test"]
+// }
+
 {
   "compilerOptions": {
-    "composite": false,
-    "declaration": true,
-    "declarationMap": true,
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    // "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "CommonJS",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "inlineSources": false,
-    "isolatedModules": true,
     "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
     "preserveWatchOutput": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "jsx": "react",
-    "lib": ["dom", "ES2015"],
-    "module": "ESNext",
-    "target": "es6"
+    "types": ["@testing-library/jest-dom"],
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "global.d.ts"
+    "tsup.config.js",
+    ".eslintrc.cjs", 
+    "jest.config.js", 
+    "src/**/*.ts", 
+    "src/**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+
+  // "references": [{ "path": "./tsconfig.node.json" }]
 }
+
+

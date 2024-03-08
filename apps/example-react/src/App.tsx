@@ -1,4 +1,4 @@
-import { Button } from "@junin-ui/react-components";
+import { Button } from "@junin-ui/react-components"
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       React App
       <Button>Button test</Button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

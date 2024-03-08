@@ -83,9 +83,10 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font: inherit; /* stylelint-disable-line declaration-block-no-shorthand-property-overrides */
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -100,17 +101,22 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
+/* stylelint-disable selector-pseudo-element-colon-notation */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -118,6 +124,8 @@ q:after {
   content: "";
   content: none;
 }
+/* stylelint-enable selector-pseudo-element-colon-notation */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

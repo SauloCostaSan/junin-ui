@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "dev": "cpx ./src/**/* ./dist/ --watch && sass src/main.scss ./dist/main.css",
-    "build": "cpx ./src/**/* ./dist/ && sass src/main.scss ./dist/main.css"
+    "build": "cpx ./src/**/* ./dist/ && sass src/main.scss ./dist/main.css",
+    "lint": "stylelint **/*.scss",
+    "publish": "npm publish"
   },
   "keywords": [],
   "author": "Saulo Santana",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cpx2": "^7.0.1"
   },
   "devDependencies": {
-    "sass": "^1.71.1"
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-prettier": "^5.0.0"
   }
 }
